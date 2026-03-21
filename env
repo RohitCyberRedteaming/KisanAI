@@ -1,0 +1,9 @@
+# KisanAI Environment Variables
+# Replace with your actual keys before running
+
+EXPO_PUBLIC_ANTHROPIC_API_KEY=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
+EXPO_PUBLIC_OPENWEATHER_API_KEY=31ccd75a8e00ce5f553e2e2d57a0bc6f
+EXPO_PUBLIC_BACKEND_URL=kisanai-backend-production-a5c3.up.railway.app
+
+# Optional
+EXPO_PUBLIC_GOOGLE_MAPS_KEY=your_google_maps_key_here
