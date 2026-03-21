@@ -1,0 +1,74 @@
+{
+  "expo": {
+    "name": "KisanAI",
+    "slug": "kisanai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a4d14"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kisanai.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "फसल की तस्वीर लेने के लिए",
+        "NSMicrophoneUsageDescription": "आवाज़ से सवाल पूछने के लिए",
+        "NSPhotoLibraryUsageDescription": "गैलरी से तस्वीर चुनने के लिए",
+        "NSLocationWhenInUseUsageDescription": "आपके क्षेत्र का मौसम जानने के लिए"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1a4d14"
+      },
+      "package": "com.kisanai.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.INTERNET",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE"
+      ]
+      
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-camera",
+      "expo-image-picker",
+      "expo-location",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#2d9a27"
+        }
+      ],
+      "expo-font"
+    ],
+    "scheme": "kisanai",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "88fe155f-1efd-4bb7-a09e-651e37557640"
+      }
+    }
+  }
+}

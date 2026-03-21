@@ -1,0 +1,151 @@
+export const DISEASES = [
+  {
+    id: '1',
+    name: 'पत्ती झुलसा रोग',
+    nameEng: 'Leaf Blight (Alternaria)',
+    crop: 'गेहूँ, धान, मक्का',
+    severity: 'high',
+    emoji: '🍂',
+    confidence: 91,
+    symptoms: 'पत्तियों पर भूरे-काले धब्बे जो किनारे से बढ़ते हैं। पत्तियाँ पीली पड़कर सूख जाती हैं। रात की ओस से रोग तेज़ी से फैलता है।',
+    treatment: [
+      'मैन्कोज़ेब 75% WP (2 ग्राम/लीटर पानी) का छिड़काव करें',
+      'रोगग्रस्त पत्तियाँ तोड़कर जला दें',
+      'खेत में पानी जमा न होने दें',
+      '7-10 दिन बाद दोबारा छिड़काव करें',
+      'नाइट्रोजन की अधिक मात्रा न दें',
+    ],
+    prevention: 'रोग प्रतिरोधी किस्में बोएँ। बीजोपचार करें।',
+  },
+  {
+    id: '2',
+    name: 'पाउडरी मिल्ड्यू',
+    nameEng: 'Powdery Mildew',
+    crop: 'गेहूँ, मटर, अंगूर',
+    severity: 'medium',
+    emoji: '⬜',
+    confidence: 87,
+    symptoms: 'पत्तियों पर सफेद पाउडर जैसा लेप। पत्तियाँ मुड़ जाती हैं। धीरे-धीरे पूरा पौधा प्रभावित होता है।',
+    treatment: [
+      'सल्फर 80% WP (3 ग्राम/लीटर) का छिड़काव करें',
+      'नीम तेल (5 मिलीलीटर/लीटर) भी प्रभावी है',
+      'रोगग्रस्त भागों को हटाएँ',
+      'कार्बेन्डाज़िम 50% WP का उपयोग करें',
+    ],
+    prevention: 'पौधों के बीच दूरी रखें। नमी कम रखें।',
+  },
+  {
+    id: '3',
+    name: 'धान का ब्लास्ट',
+    nameEng: 'Rice Blast (Pyricularia)',
+    crop: 'धान',
+    severity: 'high',
+    emoji: '💥',
+    confidence: 94,
+    symptoms: 'पत्तियों पर हीरे के आकार के धब्बे, किनारे भूरे। बालियाँ टूट जाती हैं। फसल का बड़ा नुकसान।',
+    treatment: [
+      'ट्राइसाइक्लाज़ोल 75% WP (0.6 ग्राम/लीटर) तुरंत छिड़कें',
+      'खेत से पानी निकाल दें',
+      'नाइट्रोजन खाद कम करें',
+      'जैव कीटनाशक ट्राइकोडर्मा का उपयोग करें',
+    ],
+    prevention: 'रोग प्रतिरोधी किस्म PR-118 बोएँ।',
+  },
+  {
+    id: '4',
+    name: 'सफेद मक्खी',
+    nameEng: 'Whitefly Infestation',
+    crop: 'कपास, टमाटर, बैंगन',
+    severity: 'medium',
+    emoji: '🪰',
+    confidence: 83,
+    symptoms: 'पत्तियों के नीचे सफेद छोटे कीड़े। पत्तियाँ पीली पड़ती हैं। विषाणु रोग फैलाने का खतरा।',
+    treatment: [
+      'इमिडाक्लोप्रिड 17.8% SL (0.5 मिलीलीटर/लीटर) छिड़कें',
+      'पीले चिपचिपे ट्रैप लगाएँ',
+      'नीम आधारित कीटनाशक उपयोग करें',
+      'प्राकृतिक शत्रु (Encarsia) को बढ़ावा दें',
+    ],
+    prevention: 'फसल चक्र अपनाएँ। प्रतिरोधी किस्में बोएँ।',
+  },
+];
+
+export const CROPS = [
+  { id: '1', name: 'गेहूँ', emoji: '🌾', season: 'रबी', price: 4200, trend: 'up', change: 2.1 },
+  { id: '2', name: 'धान', emoji: '🌾', season: 'खरीफ', price: 2183, trend: 'up', change: 1.5 },
+  { id: '3', name: 'मक्का', emoji: '🌽', season: 'खरीफ', price: 2850, trend: 'down', change: 0.7 },
+  { id: '4', name: 'सोयाबीन', emoji: '🫘', season: 'खरीफ', price: 5100, trend: 'down', change: 0.8 },
+  { id: '5', name: 'मूँगफली', emoji: '🥜', season: 'खरीफ', price: 6300, trend: 'up', change: 3.2 },
+  { id: '6', name: 'मिर्च', emoji: '🌶️', season: 'रबी', price: 18500, trend: 'up', change: 2.8 },
+  { id: '7', name: 'प्याज', emoji: '🧅', season: 'रबी', price: 3200, trend: 'up', change: 5.1 },
+  { id: '8', name: 'आलू', emoji: '🥔', season: 'रबी', price: 1800, trend: 'down', change: 1.2 },
+  { id: '9', name: 'कपास', emoji: '🌿', season: 'खरीफ', price: 6890, trend: 'up', change: 0.9 },
+  { id: '10', name: 'गन्ना', emoji: '🎋', season: 'वार्षिक', price: 350, trend: 'up', change: 0.5 },
+];
+
+export const COMMUNITY_POSTS = [
+  {
+    id: '1',
+    user: 'सुरेश कुमार',
+    location: 'बाराबंकी, UP',
+    avatar: '👨‍🌾',
+    time: '2 घंटे पहले',
+    tag: 'गेहूँ किसान',
+    body: 'मेरे गेहूँ में पत्तियाँ पीली पड़ रही हैं और किनारे से जल रही हैं। AI ने "पत्ती झुलसा" बताया। क्या किसी को यही हुआ? कौन सा स्प्रे सबसे अच्छा काम किया?',
+    likes: 45,
+    comments: 12,
+    hasImage: true,
+  },
+  {
+    id: '2',
+    user: 'प्रिया देवी',
+    location: 'रायबरेली, UP',
+    avatar: '👩‍🌾',
+    time: '5 घंटे पहले',
+    tag: 'सब्जी उत्पादक',
+    body: 'आज लखनऊ मंडी में टमाटर ₹800/क्विंटल मिला! KisanAI की सलाह पर 3 दिन रोका तो दोगुना फायदा हुआ! 🎉 शुक्रिया!',
+    likes: 128,
+    comments: 34,
+    hasImage: false,
+  },
+  {
+    id: '3',
+    user: 'राजकुमार सिंह',
+    location: 'सीतापुर, UP',
+    avatar: '🧑‍🌾',
+    time: '1 दिन पहले',
+    tag: 'धान किसान',
+    body: 'IoT सेंसर लगाया खेत में। मिट्टी की नमी सीधे फोन पर दिखती है। पानी 30% बचा!',
+    likes: 89,
+    comments: 21,
+    hasImage: false,
+  },
+];
+
+export const WEATHER_FORECAST = [
+  { day: 'आज', icon: '⛅', temp: 32, rain: 20 },
+  { day: 'कल', icon: '🌧️', temp: 27, rain: 75 },
+  { day: 'बुध', icon: '🌦️', temp: 29, rain: 45 },
+  { day: 'गुरु', icon: '☀️', temp: 34, rain: 10 },
+  { day: 'शुक्र', icon: '☀️', temp: 35, rain: 5 },
+];
+
+export const CROP_RECOMMENDATIONS = {
+  'दोमट मिट्टी (Loamy)': {
+    'रबी (नवंबर-अप्रैल)': [
+      { name: 'गेहूँ', emoji: '🌾', score: 95, yield: '45-50 क्विंटल/हेक्टेयर', price: '₹4,200+' },
+      { name: 'मटर', emoji: '🫛', score: 82, yield: '10-12 क्विंटल/हेक्टेयर', price: '₹3,800' },
+      { name: 'मसूर', emoji: '🫘', score: 74, yield: '10-15 क्विंटल/हेक्टेयर', price: '₹5,800' },
+    ],
+    'खरीफ (जून-नवंबर)': [
+      { name: 'धान', emoji: '🌾', score: 90, yield: '40-50 क्विंटल/हेक्टेयर', price: '₹2,183' },
+      { name: 'मक्का', emoji: '🌽', score: 85, yield: '30-35 क्विंटल/हेक्टेयर', price: '₹2,850' },
+      { name: 'सोयाबीन', emoji: '🫘', score: 78, yield: '15-20 क्विंटल/हेक्टेयर', price: '₹5,100' },
+    ],
+  },
+  default: [
+    { name: 'गेहूँ', emoji: '🌾', score: 88, yield: '40-45 क्विंटल/हेक्टेयर', price: '₹4,200+' },
+    { name: 'मक्का', emoji: '🌽', score: 75, yield: '25-30 क्विंटल/हेक्टेयर', price: '₹2,850' },
+    { name: 'दलहन', emoji: '🫘', score: 65, yield: '8-12 क्विंटल/हेक्टेयर', price: '₹5,500' },
+  ],
+};
